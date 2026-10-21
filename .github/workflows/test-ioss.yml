@@ -1,4 +1,4 @@
-name: Test iOS
+name: Build iOS
 
 on:
   workflow_dispatch:
@@ -16,5 +16,6 @@ jobs:
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
+          sdk: v5.11.2
           combine: false
           target: iOS
